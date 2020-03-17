@@ -17,7 +17,7 @@ type Host struct {
 	Address Address  `xml:"address"`
 	Ports   Ports    `xml:"ports>port"`
 }
-type Ports []struct {
+type Ports struct {
 	Protocol string  `xml:"protocol,attr"`
 	Portid   string  `xml:"portid,attr"`
 	State    State   `xml:"state"`
